@@ -1,0 +1,240 @@
+@import url(./normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+:root {
+   
+    /*Colors*/
+
+    /*Primary*/
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    /*Primary*/
+    /*Neutral*/
+
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    /*Neutral*/
+    /*Colors*/
+    /*fonts*/
+    --outfit:'Outfit', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--mainBG);
+}
+
+.container {
+    width: 320px;
+    height: auto;
+    display: flex;
+    margin-top: 50px;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cardBG);
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-tile {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-eth {
+    width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+.img-eth-view{
+   background-color: var(--Cyan);
+   width: 280px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin-top: -280px;
+    opacity: 0;
+    transition: all;
+   transition-duration: 1s;
+}   
+.img-eth-view:hover{
+   opacity: 0.5;
+   transition: all;
+   transition-duration: 1s;
+}
+
+.title {
+    width: 280px;
+    color: var(--White);
+    font-family: var(--outfit);
+    font-weight: 400;
+    transition: all;
+    transition-duration: 1s;
+}
+.title:hover {
+    transition: all;
+    transition-duration: 1s;
+    color: var(--Cyan);
+    
+}
+
+.pharagraf {
+    width: 280px;
+    color: var(--Softblue);
+    font-family: var(--outfit);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.container-eth {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth  {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    color: var(--Cyan);
+}
+.eth > img {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+margin-top: -4px;
+margin-right: 5px;
+    color: var(--Cyan);
+}
+
+.days {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: var(--outfit);
+    font-weight: 300;
+    color: var(--Softblue);
+}
+.days > img{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+   
+    margin-right: 5px;
+    color: var(--Softblue);
+}
+
+.line {
+    width: 280px;
+    color: var(--line);
+}
+
+.container-avatar {
+    width: 280px;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    margin: 20px 0px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.creation {
+    color: var(--Softblue);
+}
+
+.j {
+    font-family: var(--outfit);
+    font-weight: 300;
+    color: var(--White);
+    margin: 0px 20px;
+    transition: all;
+    transition-duration: 1s;
+}
+.j:hover{
+    transition: all;
+    transition-duration: 1s;
+    color: var(--Cyan);
+}
+
+.attribution , a{
+    margin: 40px 0px;
+    font-family:'Itim', cursive;;
+    font-weight: 300;
+    color: var(--White);
+    text-decoration: none;
+
+}
+.attribution > a{
+    text-align: center;
+    font-family:'Itim', cursive;;
+    font-weight: 300;
+    color: var(--Softblue);
+    
+
+}
+.attribution > a:hover{
+    
+    font-family:'Itim', cursive;;
+    font-weight: 300;
+    color: var(--Softblue);
+    text-decoration:underline;
+    
+
+}
+@media only screen and (max-width:600px){
+    .attribution{
+        font-size: 13px;
+        justify-content: center;
+        text-align: center;
+    }
+    body{
+        font-size: 14px; 
+    }
+    p{
+        font-size: 15px;   
+    }
+    .container {
+        width: 300px;
+        height: auto;
+        display: flex;
+        margin-top: 50px;
+        padding: 20px 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--cardBG);
+        border-radius: 10px;
+    }
+}
