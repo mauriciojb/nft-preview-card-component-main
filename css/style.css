@@ -90,6 +90,7 @@ body {
     color: var(--White);
     font-family: var(--outfit);
     font-weight: 400;
+    font-size: 1.6pc;
     transition: all;
     transition-duration: 1s;
 }
